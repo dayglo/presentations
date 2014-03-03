@@ -1,0 +1,304 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Users/gee/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 89, ../sass/screen.scss */
+.internalFrame {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* line 121, ../sass/screen.scss */
+.hw_button {
+  display: inline-block;
+  margin: 25px 5px 5px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 10px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 124, ../sass/screen.scss */
+.hw_button span {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #11a7fc;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(158, 217, 250, 0.8)), to(rgba(110, 198, 247, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(158, 217, 250, 0.8), rgba(110, 198, 247, 0.2));
+  background-image: -moz-linear-gradient(rgba(158, 217, 250, 0.8), rgba(110, 198, 247, 0.2));
+  background-image: -o-linear-gradient(rgba(158, 217, 250, 0.8), rgba(110, 198, 247, 0.2));
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 10px rgba(201, 49, 95, 0.5);
+  -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+  -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+/* line 127, ../sass/screen.scss */
+.hw_button:hover span {
+  background-color: #026aa5;
+  text-shadow: 0 -1px px rgba(201, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* line 130, ../sass/screen.scss */
+.hw_button:active, .hw_button:focus {
+  -webkit-box-shadow: 0 8px 0 #026aa5, 0 12px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 0 #026aa5, 0 12px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 #026aa5, 0 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 133, ../sass/screen.scss */
+.hw_button:active span {
+  -webkit-transform: translate(0, 5px);
+  -moz-transform: translate(0, 5px);
+  -o-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+}
+
+/* line 136, ../sass/screen.scss */
+.hw_internalItem {
+  padding: 10px;
+  float: left;
+  border-radius: 8px;
+  background-color: #11a7fc;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(158, 217, 250, 0.8)), to(rgba(110, 198, 247, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(158, 217, 250, 0.8), rgba(110, 198, 247, 0.2));
+  background-image: -moz-linear-gradient(rgba(158, 217, 250, 0.8), rgba(110, 198, 247, 0.2));
+  background-image: -o-linear-gradient(rgba(158, 217, 250, 0.8), rgba(110, 198, 247, 0.2));
+  margin: 4px;
+  -webkit-box-shadow: 0 2px 0 #026aa5, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 2px 0 #026aa5, 0 5px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 0 #026aa5, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+}
+
+/* line 141, ../sass/screen.scss */
+.os_button {
+  display: inline-block;
+  margin: 25px 5px 5px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 10px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 144, ../sass/screen.scss */
+.os_button span {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #95d127;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(218, 250, 158, 0.8)), to(rgba(199, 247, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(218, 250, 158, 0.8), rgba(199, 247, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(218, 250, 158, 0.8), rgba(199, 247, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(218, 250, 158, 0.8), rgba(199, 247, 110, 0.2));
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 10px rgba(81, 49, 95, 0.5);
+  -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+  -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+/* line 147, ../sass/screen.scss */
+.os_button:hover span {
+  background-color: #587b17;
+  text-shadow: 0 -1px px rgba(81, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* line 150, ../sass/screen.scss */
+.os_button:active, .os_button:focus {
+  -webkit-box-shadow: 0 8px 0 #587b17, 0 12px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 0 #587b17, 0 12px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 #587b17, 0 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 153, ../sass/screen.scss */
+.os_button:active span {
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+}
+
+/* line 157, ../sass/screen.scss */
+.role_button {
+  display: inline-block;
+  margin: 25px 5px 5px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 10px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 160, ../sass/screen.scss */
+.role_button span {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #ff8638;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(250, 194, 158, 0.8)), to(rgba(247, 164, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(250, 194, 158, 0.8), rgba(247, 164, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(250, 194, 158, 0.8), rgba(247, 164, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(250, 194, 158, 0.8), rgba(247, 164, 110, 0.2));
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 10px rgba(23, 49, 95, 0.5);
+  -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+  -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+/* line 163, ../sass/screen.scss */
+.role_button:hover span {
+  background-color: #d15200;
+  text-shadow: 0 -1px px rgba(23, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* line 166, ../sass/screen.scss */
+.role_button:active, .role_button:focus {
+  -webkit-box-shadow: 0 8px 0 #d15200, 0 12px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 0 #d15200, 0 12px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 #d15200, 0 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 169, ../sass/screen.scss */
+.role_button:active span {
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+}
+
+/* line 172, ../sass/screen.scss */
+.os_internalItem {
+  padding: 10px;
+  float: left;
+  border-radius: 8px;
+  background-color: #95d127;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(218, 250, 158, 0.8)), to(rgba(199, 247, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(218, 250, 158, 0.8), rgba(199, 247, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(218, 250, 158, 0.8), rgba(199, 247, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(218, 250, 158, 0.8), rgba(199, 247, 110, 0.2));
+  margin: 4px;
+  -webkit-box-shadow: 0 2px 0 #587b17, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 2px 0 #587b17, 0 5px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 0 #587b17, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+}

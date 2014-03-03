@@ -1,234 +1,238 @@
 ﻿<!doctype html>
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js"></script>
 
 
-<style>
-.box {
 	
-	height:200px;
-	width:200px;
-	color:red;
-	background-color: green;
-	display: table-cell;
-    vertical-align: middle;
-    border-radius: 10%;
-    border-width: 2px;
-    border-color:black;
-    position:absolute;
 
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-}
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
-.button {
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-    display: inline-block;
-    margin: 10px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow:    0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-    -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-    box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
-    -moz-transition: -moz-box-shadow .1s ease-in-out;
-    -o-transition: -o-box-shadow .1s ease-in-out;
-    transition: box-shadow .1s ease-in-out;
-    font-size: 50px;
-    color: #fff;
+	<link rel="stylesheet" href="stylesheets/screen.css">
 
+<!-- 
 
-}
+11A7FC  	95D127  	F2E415  	FF8638    	EE3551
+202 93 99	81 81 82	56 91 95 	24 78 100	351 78 93
+0A6599
 
+-->
 
-.boxlabel {
-	text-align: center;
-}
-
-#a {top:0px;}
-#b {top:210px;}
-#c {top:420px;}
-#d {top:630px;}
-#e {top:840px;}
-#f {top:5px;}
-#g {top:5px;}
-#h {top:5px;}
-
-.button span {
-
-	width: 300px;
-    height:250px;
-
-    display: inline-block;
-    padding: 20px 30px;
-    background-color: #ec528d;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
-    background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    font-family: 'Pacifico', Arial, sans-serif;
-    line-height: 1;
-    text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
-    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
-    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
-    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
-    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-}
-
-
-.button:hover span {
-    background-color: #ec6a9c;
-    text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
-}
-
-.button:active, .button:focus {
-    -webkit-box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-    box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-}
-
-.button:active span {
-    -webkit-transform: translate(0, 4px);
-    -moz-transform: translate(0, 4px);
-    -o-transform: translate(0, 4px);
-    transform: translate(0, 4px);
-}
-
-.internalFrame {
-	background-color:green;
-	font-size: 20px;
-	margin: 5px;
-	margin-top:10px;
-
-}
-
-.internalItem {
-
-	padding:10px;
-	float:left;
-    border-radius: 8px;
-
-   background-color: #ee528d;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
-    background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    margin:4px;
-
-
-
-
-}
-
-p {color:blue;}
-
-
-</style>
 
 </head>
 <body>
 
-<div>
-	<a class='button'>
-		<span>IIS Web
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+	<table style='width:100%;border:0;' cellpadding="0" cellspacing="0" border="0">
 
-	<a class='button'>
-		<span>Websphere Web
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+		<tr>
+			
+			<td>
+				<a class='role_button'>
+					<span>SQL
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
+						</div>
+						<div class='internalFrame'>
+							<div class='os_internalItem'>Windows 2008 R2</div>
+							<div class='os_internalItem'>Windows 2012 R2</div>
+							<div class='os_internalItem'>Red Hat Linux 5</div>
+							<div class='os_internalItem'>Red Hat Linux 6</div>
+						</div>
+					</span>
+				</a>
+			</td>
 
-	<a class='button'>
-		<span>General App
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+			<td>
+				<a class='role_button'>
+					<span>App
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
 
-</div>
+						</div>
+						<div class='internalFrame'>
+							<div class='os_internalItem'>Windows 2008 R2</div>
+							<div class='os_internalItem'>Windows 2012 R2</div>
+							<div class='os_internalItem'>Red Hat Linux 5</div>
+							<div class='os_internalItem'>Red Hat Linux 6</div>
+						</div>
+					</span>
+				</a>
+			</td>
 
-<div class='operatingSystems'>
-	<a class='button'>
-		<span>Windows 2008 R2
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+			<td>
+				<a class='role_button'>
+					<span>Websphere
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
 
-	<a class='button'>
-		<span>Windows 2012 R2
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+						</div>
+						<div class='internalFrame'>
+							<div class='os_internalItem'>Windows 2008 R2</div>
+							<div class='os_internalItem'>Windows 2012 R2</div>
+							<div class='os_internalItem'>Red Hat Linux 5</div>
+							<div class='os_internalItem'>Red Hat Linux 6</div>
+						</div>
+					</span>
+				</a>
+			</td>
+			<td>
+				<a class='role_button'>
+					<span>(...)
+						<div class='internalFrame'>
 
-	<a class='button'>
-		<span>Red Hat Linux 5
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+						</div>
+					</span>
+				</a>
+			</td>
+		</tr>
+	</table>
+	
 
-	<a class='button'>
-		<span>Red Hat Linux 6
-			<div class='internalFrame'>
-				<div class='internalItem'>vmware v4</div>
-				<div class='internalItem'>vmware v5</div>
-				<div class='internalItem'>proliant gen7</div>
-				<div class='internalItem'>proliant gen8</div>
-				<div class='internalItem'>proliant gen9</div>
-			</div>
-		</span>
-	</a>
+	<table style='width:100%;border:0;' cellpadding="0" cellspacing="0" border="0">
 
-</div>
+		<tr>
+			
+			<td>
+				<a class='os_button'>
+					<span>Windows 2008 R2
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
+
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='os_button'>
+					<span>Windows 2012 R2
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
+
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='os_button'>
+					<span>Red Hat Linux 5
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
+
+						</div>
+					</span>
+				</a>
+			</td>
+			<td>
+				<a class='os_button'>
+					<span>Red Hat Linux 6
+						<div class='internalFrame'>
+							<div class='hw_internalItem'>vmware v4</div>
+							<div class='hw_internalItem'>vmware v5</div>
+							<div class='hw_internalItem'>proliant gen7</div>
+							<div class='hw_internalItem'>proliant gen8</div>
+
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='os_button'>
+					<span>(...)
+						<div class='internalFrame'>
+
+						</div>
+					</span>
+				</a>
+			</td>
+		</tr>
+	</table>
 
 
+
+	<table style='width:100%;border:0;' cellpadding="0" cellspacing="0" border="0">
+
+		<tr>
+			
+			<td>
+				<a class='hw_button'>
+					<span>HP Proliant gen7
+						<div class='internalFrame'>
+							
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='hw_button'>
+					<span>HP Proliant gen8
+						<div class='internalFrame'>
+
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='hw_button'>
+					<span>Vmware v4.x
+						<div class='internalFrame'>
+
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='hw_button'>
+					<span>Vmware v5.x
+						<div class='internalFrame'>
+
+						</div>
+					</span>
+				</a>
+			</td>
+
+			<td>
+				<a class='hw_button'>
+					<span>(...)
+						<div class='internalFrame'>
+
+						</div>
+					</span>
+				</a>
+			</td>
+		</tr>
+	</table>
 
 
 <!--<div id='b' class='box'><div class='boxlabel'>test</div></div>

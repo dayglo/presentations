@@ -1,0 +1,175 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+$my_blue: #11A7FC;
+$my_blue2: hue(darken($my_blue,10));
+$my_blue3: darken( $my_blue, 20% );
+
+$my_green: #95D127;
+$my_yellow: #F2E415;
+$my_orange: #FF8638;
+$my_amaranth: #EE3551;
+
+
+@mixin mybutton($main_color,$box_height) {
+
+	$active_color: darken( $main_color, 20% );
+	display: inline-block;
+	margin: 25px 5px 5px 0px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow:    0 $box_height 0 $active_color, 0 15px 20px rgba(0, 0, 0, .35);
+	-moz-box-shadow: 0 $box_height 0 $active_color, 0 15px 20px rgba(0, 0, 0, .35);
+	box-shadow: 0 $box_height 0 $active_color, 0 15px 20px rgba(0, 0, 0, .35);
+	-webkit-transition: -webkit-box-shadow .1s ease-in-out;
+	-moz-transition: -moz-box-shadow .1s ease-in-out;
+	-o-transition: -o-box-shadow .1s ease-in-out;
+	transition: box-shadow .1s ease-in-out;
+	font-size: 50px;
+	color: #fff;
+
+}
+
+@mixin mybuttonspan($main_color) {
+	$active_color: darken( $main_color, 20% );
+	$gradient_hue: hue(darken($main_color,10%));
+
+	display: inline-block;
+	padding: 20px 30px;
+	background-color: $main_color;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla($gradient_hue, 90%, 80%, .8)), to(hsla($gradient_hue, 90%, 70%, .2)));
+	background-image: -webkit-linear-gradient(hsla($gradient_hue, 90%, 80%, .8), hsla($gradient_hue, 90%, 70%, .2));
+	background-image: -moz-linear-gradient(hsla($gradient_hue, 90%, 80%, .8), hsla($gradient_hue, 90%, 70%, .2));
+	background-image: -o-linear-gradient(hsla($gradient_hue, 90%, 80%, .8), hsla($gradient_hue, 90%, 70%, .2));
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+	-moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+	font-family: 'Pacifico', Arial, sans-serif;
+	line-height: 1;
+	text-shadow: 0 -1px 10px rgba($gradient_hue, 49, 95, .5);
+	-webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+	-o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+	transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+
+}
+
+@mixin buttonhoverspan ($main_color) {
+	$active_color: darken( $main_color, 20% );
+	$gradient_hue: hue(darken($main_color,10%));
+	background-color: $active_color;
+	text-shadow: 0 -1px px rgba($gradient_hue, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+}
+
+@mixin buttonactiveandfocus ($main_color) {
+
+	$active_color: darken( $main_color, 20% );
+	$gradient_hue: hue(darken($main_color,10%));
+	-webkit-box-shadow:    0 8px 0 $active_color, 0 12px 10px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 8px 0 $active_color, 0 12px 10px rgba(0, 0, 0, .3);
+	box-shadow:    0 8px 0 $active_color, 0 12px 10px rgba(0, 0, 0, .3);
+}
+
+@mixin buttonactivespan($translate_amount) {
+	-webkit-transform: translate(0,$translate_amount);
+	-moz-transform: translate(0, $translate_amount);
+	-o-transform: translate(0, $translate_amount);
+	transform: translate(0, $translate_amount);
+}
+
+.internalFrame {
+	font-size: 20px;
+	padding-top:10px;
+	padding-bottom:20px;
+}
+
+@mixin internalItem ($main_color){
+
+	$shadow_color: darken( $main_color, 20% );
+	$gradient_hue: hue(darken($main_color,10%));
+	padding:10px;
+	float:left;
+	border-radius: 8px;
+
+	background-color: $main_color;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla($gradient_hue, 90%, 80%, .8)), to(hsla($gradient_hue, 90%, 70%, .2)));
+	background-image: -webkit-linear-gradient(hsla($gradient_hue, 90%, 80%, .8), hsla($gradient_hue, 90%, 70%, .2));
+	background-image: -moz-linear-gradient(hsla($gradient_hue, 90%, 80%, .8), hsla($gradient_hue, 90%, 70%, .2));
+	background-image: -o-linear-gradient(hsla($gradient_hue, 90%, 80%, .8), hsla($gradient_hue, 90%, 70%, .2));
+	margin:4px;
+
+	-webkit-box-shadow:    0 2px 0 $shadow_color, 0 5px 7px rgba(0, 0, 0, .35);
+	-moz-box-shadow: 0 2px 0 $shadow_color, 0 5px 7px rgba(0, 0, 0, .35);
+	box-shadow: 0 2px 0 $shadow_color, 0 5px 7px rgba(0, 0, 0, .35);
+	-webkit-transition: -webkit-box-shadow .1s ease-in-out;
+	-moz-transition: -moz-box-shadow .1s ease-in-out;
+	-o-transition: -o-box-shadow .1s ease-in-out;
+	transition: box-shadow .1s ease-in-out;
+
+}
+
+
+.hw_button {
+	@include mybutton($my_blue,10px);
+}
+.hw_button span {
+	@include mybuttonspan($my_blue);
+}
+.hw_button:hover span {
+	@include buttonhoverspan($my_blue);
+}
+.hw_button:active, .hw_button:focus {
+	@include buttonactiveandfocus($my_blue);
+}
+.hw_button:active span {
+	@include buttonactivespan(5px);
+}
+.hw_internalItem {
+	@include internalItem($my_blue);
+
+}
+
+.os_button {
+	@include mybutton($my_green,10px);
+}
+.os_button span {
+	@include mybuttonspan($my_green);
+}
+.os_button:hover span {
+	@include buttonhoverspan($my_green);
+}
+.os_button:active, .os_button:focus {
+	@include buttonactiveandfocus($my_green);
+}
+.os_button:active span {
+	@include buttonactivespan(10px);
+}
+
+.role_button {
+	@include mybutton($my_orange,10px);
+}
+.role_button span {
+	@include mybuttonspan($my_orange);
+}
+.role_button:hover span {
+	@include buttonhoverspan($my_orange);
+}
+.role_button:active, .role_button:focus {
+	@include buttonactiveandfocus($my_orange);
+}
+.role_button:active span {
+	@include buttonactivespan(10px);
+}
+.os_internalItem {
+	@include internalItem($my_green);
+
+}
