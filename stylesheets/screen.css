@@ -67,23 +67,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .internalFrame {
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  margin-top: 10px;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .hw_button {
   display: inline-block;
-  margin: 25px 5px 5px 0px;
+  margin: 25px 18px 18px 0px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: 0 10px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 10px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 10px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 20px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 20px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 0 #026aa5, 0 15px 20px rgba(0, 0, 0, 0.35);
   -webkit-transition: -webkit-box-shadow .1s ease-in-out;
   -moz-transition: -moz-box-shadow .1s ease-in-out;
   -o-transition: -o-box-shadow .1s ease-in-out;
@@ -92,7 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .hw_button span {
   display: inline-block;
   padding: 20px 30px;
@@ -116,29 +114,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: background-color .2s ease-in-out, transform .1s ease-in-out;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .hw_button:hover span {
   background-color: #026aa5;
   text-shadow: 0 -1px px rgba(201, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .hw_button:active, .hw_button:focus {
   -webkit-box-shadow: 0 8px 0 #026aa5, 0 12px 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 8px 0 #026aa5, 0 12px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 0 #026aa5, 0 12px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .hw_button:active span {
-  -webkit-transform: translate(0, 5px);
-  -moz-transform: translate(0, 5px);
-  -o-transform: translate(0, 5px);
-  transform: translate(0, 5px);
+  -webkit-transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  transform: translate(0, 20px);
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .hw_internalItem {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   padding: 10px;
   float: left;
   border-radius: 8px;
@@ -157,16 +158,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: box-shadow .1s ease-in-out;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .os_button {
   display: inline-block;
-  margin: 25px 5px 5px 0px;
+  margin: 25px 18px 18px 0px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: 0 10px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 10px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 10px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 20px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 20px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 0 #587b17, 0 15px 20px rgba(0, 0, 0, 0.35);
   -webkit-transition: -webkit-box-shadow .1s ease-in-out;
   -moz-transition: -moz-box-shadow .1s ease-in-out;
   -o-transition: -o-box-shadow .1s ease-in-out;
@@ -175,7 +176,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .os_button span {
   display: inline-block;
   padding: 20px 30px;
@@ -199,37 +200,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: background-color .2s ease-in-out, transform .1s ease-in-out;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .os_button:hover span {
   background-color: #587b17;
   text-shadow: 0 -1px px rgba(81, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .os_button:active, .os_button:focus {
   -webkit-box-shadow: 0 8px 0 #587b17, 0 12px 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 8px 0 #587b17, 0 12px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 0 #587b17, 0 12px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .os_button:active span {
-  -webkit-transform: translate(0, 10px);
-  -moz-transform: translate(0, 10px);
-  -o-transform: translate(0, 10px);
-  transform: translate(0, 10px);
+  -webkit-transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  transform: translate(0, 20px);
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .role_button {
   display: inline-block;
-  margin: 25px 5px 5px 0px;
+  margin: 25px 18px 18px 0px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: 0 10px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 10px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 10px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 20px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 20px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 0 #d15200, 0 15px 20px rgba(0, 0, 0, 0.35);
   -webkit-transition: -webkit-box-shadow .1s ease-in-out;
   -moz-transition: -moz-box-shadow .1s ease-in-out;
   -o-transition: -o-box-shadow .1s ease-in-out;
@@ -238,7 +239,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .role_button span {
   display: inline-block;
   padding: 20px 30px;
@@ -262,29 +263,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: background-color .2s ease-in-out, transform .1s ease-in-out;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .role_button:hover span {
   background-color: #d15200;
   text-shadow: 0 -1px px rgba(23, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .role_button:active, .role_button:focus {
   -webkit-box-shadow: 0 8px 0 #d15200, 0 12px 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 8px 0 #d15200, 0 12px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 0 #d15200, 0 12px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .role_button:active span {
-  -webkit-transform: translate(0, 10px);
-  -moz-transform: translate(0, 10px);
-  -o-transform: translate(0, 10px);
-  transform: translate(0, 10px);
+  -webkit-transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  transform: translate(0, 20px);
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .os_internalItem {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   padding: 10px;
   float: left;
   border-radius: 8px;
@@ -301,4 +305,291 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transition: -moz-box-shadow .1s ease-in-out;
   -o-transition: -o-box-shadow .1s ease-in-out;
   transition: box-shadow .1s ease-in-out;
+}
+
+/* line 178, ../sass/screen.scss */
+.app_button {
+  display: inline-block;
+  margin: 25px 18px 18px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 20px 0 #998f08, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 20px 0 #998f08, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 0 #998f08, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 181, ../sass/screen.scss */
+.app_button span {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #f2e415;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(250, 244, 158, 0.8)), to(rgba(247, 239, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(250, 244, 158, 0.8), rgba(247, 239, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(250, 244, 158, 0.8), rgba(247, 239, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(250, 244, 158, 0.8), rgba(247, 239, 110, 0.2));
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 10px rgba(56, 49, 95, 0.5);
+  -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+  -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+/* line 184, ../sass/screen.scss */
+.app_button:hover span {
+  background-color: #998f08;
+  text-shadow: 0 -1px px rgba(56, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* line 187, ../sass/screen.scss */
+.app_button:active, .app_button:focus {
+  -webkit-box-shadow: 0 8px 0 #998f08, 0 12px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 0 #998f08, 0 12px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 #998f08, 0 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 190, ../sass/screen.scss */
+.app_button:active span {
+  -webkit-transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+}
+
+/* line 193, ../sass/screen.scss */
+.role_internalItem {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding: 10px;
+  float: left;
+  border-radius: 8px;
+  background-color: #ff8638;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(250, 194, 158, 0.8)), to(rgba(247, 164, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(250, 194, 158, 0.8), rgba(247, 164, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(250, 194, 158, 0.8), rgba(247, 164, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(250, 194, 158, 0.8), rgba(247, 164, 110, 0.2));
+  margin: 4px;
+  -webkit-box-shadow: 0 2px 0 #d15200, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 2px 0 #d15200, 0 5px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 0 #d15200, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+}
+
+/* line 198, ../sass/screen.scss */
+.service_button {
+  display: inline-block;
+  margin: 25px 18px 18px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 20px 0 #ae0f27, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 20px 0 #ae0f27, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 0 #ae0f27, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 201, ../sass/screen.scss */
+.service_button span {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #ee3551;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(181, 158, 250, 0.8)), to(rgba(144, 110, 247, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(181, 158, 250, 0.8), rgba(144, 110, 247, 0.2));
+  background-image: -moz-linear-gradient(rgba(181, 158, 250, 0.8), rgba(144, 110, 247, 0.2));
+  background-image: -o-linear-gradient(rgba(181, 158, 250, 0.8), rgba(144, 110, 247, 0.2));
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 10px rgba(255, 49, 95, 0.5);
+  -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+  -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+/* line 204, ../sass/screen.scss */
+.service_button:hover span {
+  background-color: #ae0f27;
+  text-shadow: 0 -1px px rgba(255, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* line 207, ../sass/screen.scss */
+.service_button:active, .service_button:focus {
+  -webkit-box-shadow: 0 8px 0 #ae0f27, 0 12px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 0 #ae0f27, 0 12px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 #ae0f27, 0 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 210, ../sass/screen.scss */
+.service_button:active span {
+  -webkit-transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+}
+
+/* line 213, ../sass/screen.scss */
+.app_internalItem {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding: 10px;
+  float: left;
+  border-radius: 8px;
+  background-color: #f2e415;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(250, 244, 158, 0.8)), to(rgba(247, 239, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(250, 244, 158, 0.8), rgba(247, 239, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(250, 244, 158, 0.8), rgba(247, 239, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(250, 244, 158, 0.8), rgba(247, 239, 110, 0.2));
+  margin: 4px;
+  -webkit-box-shadow: 0 2px 0 #998f08, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 2px 0 #998f08, 0 5px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 0 #998f08, 0 5px 7px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+}
+
+/* line 218, ../sass/screen.scss */
+.play_button {
+  display: inline-block;
+  margin: 25px 18px 18px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 20px 0 #999999, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 20px 0 #999999, 0 15px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 0 #999999, 0 15px 20px rgba(0, 0, 0, 0.35);
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  -moz-transition: -moz-box-shadow .1s ease-in-out;
+  -o-transition: -o-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 221, ../sass/screen.scss */
+.play_button span {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #cccccc;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(250, 158, 158, 0.8)), to(rgba(247, 110, 110, 0.2)));
+  background-image: -webkit-linear-gradient(rgba(250, 158, 158, 0.8), rgba(247, 110, 110, 0.2));
+  background-image: -moz-linear-gradient(rgba(250, 158, 158, 0.8), rgba(247, 110, 110, 0.2));
+  background-image: -o-linear-gradient(rgba(250, 158, 158, 0.8), rgba(247, 110, 110, 0.2));
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 10px rgba(0, 49, 95, 0.5);
+  -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+  -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+/* line 224, ../sass/screen.scss */
+.play_button:hover span {
+  background-color: #999999;
+  text-shadow: 0 -1px px rgba(0, 49, 95, 0.9), 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* line 227, ../sass/screen.scss */
+.play_button:active, .play_button:focus {
+  -webkit-box-shadow: 0 8px 0 #999999, 0 12px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 0 #999999, 0 12px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 0 #999999, 0 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 230, ../sass/screen.scss */
+.play_button:active span {
+  -webkit-transform: translate(0, 20px);
+  -moz-transform: translate(0, 20px);
+  -o-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.eot?-16smi3");
+  src: url("http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.eot?#iefix-16smi3") format("embedded-opentype"), url("http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.woff?-16smi3") format("woff"), url("http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.ttf?-16smi3") format("truetype"), url("http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.svg?-16smi3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 248, ../sass/screen.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 262, ../sass/screen.scss */
+.icon-home:before {
+  content: "\e600";
+}
+
+/* line 265, ../sass/screen.scss */
+.icon-pencil:before {
+  content: "\e601";
+}
+
+/* line 268, ../sass/screen.scss */
+.icon-play:before {
+  content: "\e602";
+}
+
+/* line 271, ../sass/screen.scss */
+.icon-pause:before {
+  content: "\e603";
+}
+
+/* line 274, ../sass/screen.scss */
+.icon-pause2:before {
+  content: "\e604";
+}
+
+/* line 277, ../sass/screen.scss */
+.icon-play2:before {
+  content: "\e605";
 }

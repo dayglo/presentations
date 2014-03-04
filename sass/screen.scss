@@ -7,9 +7,6 @@
 
 
 $my_blue: #11A7FC;
-$my_blue2: hue(darken($my_blue,10));
-$my_blue3: darken( $my_blue, 20% );
-
 $my_green: #95D127;
 $my_yellow: #F2E415;
 $my_orange: #FF8638;
@@ -20,7 +17,7 @@ $my_amaranth: #EE3551;
 
 	$active_color: darken( $main_color, 20% );
 	display: inline-block;
-	margin: 25px 5px 5px 0px;
+	margin: 25px 18px 18px 0px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -38,7 +35,7 @@ $my_amaranth: #EE3551;
 
 @mixin mybuttonspan($main_color) {
 	$active_color: darken( $main_color, 20% );
-	$gradient_hue: hue(darken($main_color,10%));
+	$gradient_hue: min(hue(darken($main_color,10%)),255);
 
 	display: inline-block;
 	padding: 20px 30px;
@@ -65,7 +62,7 @@ $my_amaranth: #EE3551;
 
 @mixin buttonhoverspan ($main_color) {
 	$active_color: darken( $main_color, 20% );
-	$gradient_hue: hue(darken($main_color,10%));
+	$gradient_hue: min(hue(darken($main_color,10%)),255);
 	background-color: $active_color;
 	text-shadow: 0 -1px px rgba($gradient_hue, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
 }
@@ -73,7 +70,7 @@ $my_amaranth: #EE3551;
 @mixin buttonactiveandfocus ($main_color) {
 
 	$active_color: darken( $main_color, 20% );
-	$gradient_hue: hue(darken($main_color,10%));
+	$gradient_hue: min(hue(darken($main_color,10%)),255);
 	-webkit-box-shadow:    0 8px 0 $active_color, 0 12px 10px rgba(0, 0, 0, .3);
 	-moz-box-shadow: 0 8px 0 $active_color, 0 12px 10px rgba(0, 0, 0, .3);
 	box-shadow:    0 8px 0 $active_color, 0 12px 10px rgba(0, 0, 0, .3);
@@ -87,15 +84,19 @@ $my_amaranth: #EE3551;
 }
 
 .internalFrame {
-	font-size: 20px;
-	padding-top:10px;
-	padding-bottom:20px;
+
+	margin-top: 10px;
+
 }
 
 @mixin internalItem ($main_color){
 
 	$shadow_color: darken( $main_color, 20% );
-	$gradient_hue: hue(darken($main_color,10%));
+	$gradient_hue: min(hue(darken($main_color,10%)),255);
+
+		font-size: 20px;
+	padding-top:10px;
+	padding-bottom:20px;
 	padding:10px;
 	float:left;
 	border-radius: 8px;
@@ -119,7 +120,7 @@ $my_amaranth: #EE3551;
 
 
 .hw_button {
-	@include mybutton($my_blue,10px);
+	@include mybutton($my_blue,20px);
 }
 .hw_button span {
 	@include mybuttonspan($my_blue);
@@ -131,7 +132,7 @@ $my_amaranth: #EE3551;
 	@include buttonactiveandfocus($my_blue);
 }
 .hw_button:active span {
-	@include buttonactivespan(5px);
+	@include buttonactivespan(20px);
 }
 .hw_internalItem {
 	@include internalItem($my_blue);
@@ -139,7 +140,7 @@ $my_amaranth: #EE3551;
 }
 
 .os_button {
-	@include mybutton($my_green,10px);
+	@include mybutton($my_green,20px);
 }
 .os_button span {
 	@include mybuttonspan($my_green);
@@ -151,11 +152,11 @@ $my_amaranth: #EE3551;
 	@include buttonactiveandfocus($my_green);
 }
 .os_button:active span {
-	@include buttonactivespan(10px);
+	@include buttonactivespan(20px);
 }
 
 .role_button {
-	@include mybutton($my_orange,10px);
+	@include mybutton($my_orange,20px);
 }
 .role_button span {
 	@include mybuttonspan($my_orange);
@@ -167,9 +168,112 @@ $my_amaranth: #EE3551;
 	@include buttonactiveandfocus($my_orange);
 }
 .role_button:active span {
-	@include buttonactivespan(10px);
+	@include buttonactivespan(20px);
 }
 .os_internalItem {
 	@include internalItem($my_green);
 
+}
+
+.app_button {
+	@include mybutton($my_yellow,20px);
+}
+.app_button span {
+	@include mybuttonspan($my_yellow);
+}
+.app_button:hover span {
+	@include buttonhoverspan($my_yellow);
+}
+.app_button:active, .app_button:focus {
+	@include buttonactiveandfocus($my_yellow);
+}
+.app_button:active span {
+	@include buttonactivespan(20px);
+}
+.role_internalItem {
+	@include internalItem($my_orange);
+
+}
+
+.service_button {
+	@include mybutton($my_amaranth,20px);
+}
+.service_button span {
+	@include mybuttonspan($my_amaranth);
+}
+.service_button:hover span {
+	@include buttonhoverspan($my_amaranth);
+}
+.service_button:active, .service_button:focus {
+	@include buttonactiveandfocus($my_amaranth);
+}
+.service_button:active span {
+	@include buttonactivespan(20px);
+}
+.app_internalItem {
+	@include internalItem($my_yellow);
+
+}
+
+.play_button {
+	@include mybutton(#cccccc,20px);
+}
+.play_button span {
+	@include mybuttonspan(#cccccc);
+}
+.play_button:hover span {
+	@include buttonhoverspan(#cccccc);
+}
+.play_button:active, .play_button:focus {
+	@include buttonactiveandfocus(#cccccc);
+}
+.play_button:active span {
+	@include buttonactivespan(20px);
+}
+
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.eot?-16smi3');
+	src:url('http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.eot?#iefix-16smi3') format('embedded-opentype'),
+		url('http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.woff?-16smi3') format('woff'),
+		url('http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.ttf?-16smi3') format('truetype'),
+		url('http://i.icomoon.io/public/temp/19b2129037/UntitledProject1/icomoon.svg?-16smi3#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e600";
+}
+.icon-pencil:before {
+	content: "\e601";
+}
+.icon-play:before {
+	content: "\e602";
+}
+.icon-pause:before {
+	content: "\e603";
+}
+.icon-pause2:before {
+	content: "\e604";
+}
+.icon-play2:before {
+	content: "\e605";
 }
